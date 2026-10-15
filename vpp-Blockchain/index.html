@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLTCHAIN | Virtual Power Plant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CINEMATIC INTRO -->
+    <div id="intro">
+        <div class="intro-grid"></div>
+
+        <div class="intro-content">
+            <div class="energy-orb"></div>
+
+            <p class="intro-small">BLOCKCHAIN ENERGY NETWORK</p>
+
+            <h1>
+                <span>VOLT</span><b>CHAIN</b>
+            </h1>
+
+            <div class="line"></div>
+
+            <p class="intro-subtitle">
+                Virtual Power Plant • Decentralized Energy • Secure Transactions
+            </p>
+
+            <button id="enterBtn">ENTER NETWORK</button>
+        </div>
+    </div>
+
+    <!-- PARTICLES -->
+    <canvas id="particles"></canvas>
+
+    <!-- MAIN APP -->
+    <div id="app">
+
+        <!-- NAVBAR -->
+        <header>
+            <div class="logo">
+                <div class="logo-icon">⚡</div>
+                <div>
+                    <strong>VOLTCHAIN</strong>
+                    <small>VIRTUAL POWER PLANT</small>
+                </div>
+            </div>
+
+            <nav>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#network">Energy Network</a>
+                <a href="#participants">Participants</a>
+                <a href="#blockchain">Blockchain</a>
+                <a href="#transactions">Transactions</a>
+            </nav>
+
+            <div class="network-status">
+                <span></span> NETWORK ONLINE
+            </div>
+        </header>
+
+
+        <!-- HERO -->
+        <section class="hero" id="dashboard">
+
+            <div class="hero-text">
+                <p class="eyebrow">DECENTRALIZED ENERGY INFRASTRUCTURE</p>
+
+                <h2>
+                    Powering the future<br>
+                    <span>through trust.</span>
+                </h2>
+
+                <p class="hero-description">
+                    A blockchain-powered Virtual Power Plant that connects
+                    renewable energy producers, consumers and secure
+                    peer-to-peer energy transactions.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="primary-btn" onclick="scrollToSection('network')">
+                        EXPLORE NETWORK
+                    </button>
+
+                    <button class="secondary-btn" onclick="scrollToSection('blockchain')">
+                        VIEW BLOCKCHAIN
+                    </button>
+                </div>
+            </div>
+
+            <!-- NETWORK VISUAL -->
+            <div class="network-visual">
+
+                <div class="central-node">
+                    <span>⚡</span>
+                    <small>VPP CORE</small>
+                </div>
+
+                <div class="node node1">☀️<small>SOLAR</small></div>
+                <div class="node node2">🌬️<small>WIND</small></div>
+                <div class="node node3">🔋<small>BATTERY</small></div>
+                <div class="node node4">🏠<small>HOME</small></div>
+                <div class="node node5">🏢<small>BUILDING</small></div>
+
+                <div class="connection c1"></div>
+                <div class="connection c2"></div>
+                <div class="connection c3"></div>
+                <div class="connection c4"></div>
+                <div class="connection c5"></div>
+
+            </div>
+        </section>
+
+
+        <!-- STATS -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <span>⚡</span>
+                <div>
+                    <small>TOTAL GENERATED</small>
+                    <h3><span class="counter" data-target="1284">0</span> kWh</h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span>🔋</span>
+                <div>
+                    <small>ENERGY AVAILABLE</small>
+                    <h3><span class="counter" data-target="742">0</span> kWh</h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span>🔗</span>
+                <div>
+                    <small>BLOCKS VERIFIED</small>
+                    <h3><span class="counter" data-target="248">0</span></h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span>💰</span>
+                <div>
+                    <small>TRANSACTIONS</small>
+                    <h3><span class="counter" data-target="967">0</span></h3>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ENERGY NETWORK -->
+        <section class="section" id="network">
+
+            <div class="section-title">
+                <div>
+                    <p class="eyebrow">LIVE INFRASTRUCTURE</p>
+                    <h2>Energy Network</h2>
+                </div>
+
+                <div class="live">
+                    <span></span> LIVE DATA
+                </div>
+            </div>
+
+            <div class="energy-grid">
+
+                <div class="energy-card solar">
+                    <div class="card-top">
+                        <span class="big-icon">☀️</span>
+                        <span class="badge">ACTIVE</span>
+                    </div>
+
+                    <h3>Solar Plant</h3>
+                    <p>SOLAR-001</p>
+
+                    <div class="energy-value">
+                        <strong>482</strong>
+                        <span>kWh</span>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:78%"></div>
+                    </div>
+
+                    <small>78% generation capacity</small>
+                </div>
+
+
+                <div class="energy-card wind">
+                    <div class="card-top">
+                        <span class="big-icon">🌬️</span>
+                        <span class="badge">ACTIVE</span>
+                    </div>
+
+                    <h3>Wind Farm</h3>
+                    <p>WIND-004</p>
+
+                    <div class="energy-value">
+                        <strong>326</strong>
+                        <span>kWh</span>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:62%"></div>
+                    </div>
+
+                    <small>62% generation capacity</small>
+                </div>
+
+
+                <div class="energy-card battery">
+                    <div class="card-top">
+                        <span class="big-icon">🔋</span>
+                        <span class="badge">CHARGING</span>
+                    </div>
+
+                    <h3>Battery Storage</h3>
+                    <p>BAT-009</p>
+
+                    <div class="energy-value">
+                        <strong>476</strong>
+                        <span>kWh</span>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:54%"></div>
+                    </div>
+
+                    <small>54% storage capacity</small>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PARTICIPANTS -->
+        <section class="section" id="participants">
+
+            <div class="section-title">
+                <div>
+                    <p class="eyebrow">NETWORK PARTICIPANTS</p>
+                    <h2>Participants</h2>
+                </div>
+            </div>
+
+            <div class="participant-grid">
+
+                <div class="participant-card">
+                    <div class="avatar producer">P</div>
+
+                    <div>
+                        <h3>Rahul Kumar</h3>
+                        <p>Producer • Solar Energy</p>
+                    </div>
+
+                    <div class="participant-data">
+                        <span>Capacity</span>
+                        <strong>10 kW</strong>
+                    </div>
+
+                    <div class="participant-data">
+                        <span>Generated</span>
+                        <strong>285 kWh</strong>
+                    </div>
+
+                    <span class="online">● ONLINE</span>
+                </div>
+
+
+                <div class="participant-card">
+                    <div class="avatar consumer">C</div>
+
+                    <div>
+                        <h3>Anjali S</h3>
+                        <p>Consumer • Residential</p>
+                    </div>
+
+                    <div class="participant-data">
+                        <span>Demand</span>
+                        <strong>8 kWh</strong>
+                    </div>
+
+                    <div class="participant-data">
+                        <span>Purchased</span>
+                        <strong>64 kWh</strong>
+                    </div>
+
+                    <span class="online">● ONLINE</span>
+                </div>
+
+
+                <div class="participant-card">
+                    <div class="avatar admin">A</div>
+
+                    <div>
+                        <h3>VPP Admin</h3>
+                        <p>System Administrator</p>
+                    </div>
+
+                    <div class="participant-data">
+                        <span>Blocks</span>
+                        <strong>248</strong>
+                    </div>
+
+                    <div class="participant-data">
+                        <span>Status</span>
+                        <strong>Verified</strong>
+                    </div>
+
+                    <span class="online">● ACTIVE</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- TRADING -->
+        <section class="section trading">
+
+            <div class="trade-box">
+                <p class="eyebrow">PEER-TO-PEER ENERGY</p>
+                <h2>Energy Trading</h2>
+
+                <div class="trade-flow">
+                    <div>
+                        <span>☀️</span>
+                        <strong>Solar-001</strong>
+                        <small>Producer</small>
+                    </div>
+
+                    <div class="arrow">
+                        ⚡ ━━━━━━━━▶
+                    </div>
+
+                    <div>
+                        <span>🏠</span>
+                        <strong>Home-024</strong>
+                        <small>Consumer</small>
+                    </div>
+                </div>
+
+                <div class="trade-details">
+                    <div>
+                        <small>ENERGY</small>
+                        <strong>5.4 kWh</strong>
+                    </div>
+
+                    <div>
+                        <small>PRICE</small>
+                        <strong>₹6.20/kWh</strong>
+                    </div>
+
+                    <div>
+                        <small>TOTAL</small>
+                        <strong>₹33.48</strong>
+                    </div>
+                </div>
+
+                <button class="primary-btn" onclick="createTransaction()">
+                    CONFIRM TRANSACTION
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- BLOCKCHAIN -->
+        <section class="section" id="blockchain">
+
+            <div class="section-title">
+                <div>
+                    <p class="eyebrow">DISTRIBUTED LEDGER</p>
+                    <h2>Blockchain Explorer</h2>
+                </div>
+
+                <div class="verified">
+                    ✓ CHAIN VERIFIED
+                </div>
+            </div>
+
+
+            <div class="blocks">
+
+                <div class="block">
+                    <div class="block-number">#0248</div>
+                    <h3>Energy Transaction</h3>
+                    <p>Solar-001 → Home-024</p>
+
+                    <div class="hash">
+                        <small>HASH</small>
+                        <code>9f83a7c2...d821</code>
+                    </div>
+
+                    <div class="hash">
+                        <small>PREVIOUS</small>
+                        <code>8a21bf91...c921</code>
+                    </div>
+
+                    <span class="verified">✓ VERIFIED</span>
+                </div>
+
+
+                <div class="block">
+                    <div class="block-number">#0247</div>
+                    <h3>Energy Transaction</h3>
+                    <p>Wind-004 → Building-12</p>
+
+                    <div class="hash">
+                        <small>HASH</small>
+                        <code>8a21bf91...c921</code>
+                    </div>
+
+                    <div class="hash">
+                        <small>PREVIOUS</small>
+                        <code>7c19ab20...f813</code>
+                    </div>
+
+                    <span class="verified">✓ VERIFIED</span>
+                </div>
+
+
+                <div class="block">
+                    <div class="block-number">#0246</div>
+                    <h3>Energy Transaction</h3>
+                    <p>Battery-009 → Home-011</p>
+
+                    <div class="hash">
+                        <small>HASH</small>
+                        <code>7c19ab20...f813</code>
+                    </div>
+
+                    <div class="hash">
+                        <small>PREVIOUS</small>
+                        <code>6b82ca11...e721</code>
+                    </div>
+
+                    <span class="verified">✓ VERIFIED</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- TRANSACTIONS -->
+        <section class="section" id="transactions">
+
+            <div class="section-title">
+                <div>
+                    <p class="eyebrow">TRANSACTION LEDGER</p>
+                    <h2>Recent Transactions</h2>
+                </div>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>TRANSACTION</th>
+                            <th>SELLER</th>
+                            <th>BUYER</th>
+                            <th>ENERGY</th>
+                            <th>AMOUNT</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>#TX-9281</td>
+                            <td>Solar-001</td>
+                            <td>Home-024</td>
+                            <td>5.4 kWh</td>
+                            <td>₹33.48</td>
+                            <td><span class="status">CONFIRMED</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#TX-9280</td>
+                            <td>Wind-004</td>
+                            <td>Building-12</td>
+                            <td>8.2 kWh</td>
+                            <td>₹50.84</td>
+                            <td><span class="status">CONFIRMED</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#TX-9279</td>
+                            <td>Battery-009</td>
+                            <td>Home-011</td>
+                            <td>3.7 kWh</td>
+                            <td>₹22.94</td>
+                            <td><span class="status">CONFIRMED</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>#TX-9278</td>
+                            <td>Solar-002</td>
+                            <td>Office-08</td>
+                            <td>12.1 kWh</td>
+                            <td>₹75.02</td>
+                            <td><span class="status">CONFIRMED</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div>
+                <strong>⚡ VOLTCHAIN</strong>
+                <p>Blockchain-Based Virtual Power Plant</p>
+            </div>
+
+            <div>
+                <span>SECURE</span>
+                <span>DECENTRALIZED</span>
+                <span>ENERGY</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
